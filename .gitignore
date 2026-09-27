@@ -3,6 +3,7 @@ node_modules
 
 .prettierignore
 .prettierrc
+prettier.config.mjs
 eslint.config.js
 
 package*
