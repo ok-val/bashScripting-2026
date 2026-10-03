@@ -4,11 +4,35 @@
     - Flags:
         - `-a`: Show all, including hidden files
 
+## Create files
+
 - `touch`: Create file; if already exist, update its latest edited time
 
 ---
 
-**Powerful tools** -- these are FOOTGUNS
+Warning: **Powerful tools** -- these are FOOTGUNS
+
+---
+
+## Write and Rewrite files
+
+1. Create / Overwrite `>`
+
+- `<command that returns strings> > <filename>`: Create and write to a
+  file; if already exists, _overwrite_ file instead.
+    - `echo hello > file.txt`
+    - `grep 'hello' source.txt > dest.txt`
+
+2. Create / Append `>>`
+
+- `<command that returns strings> >> <filename>`: Create and write to a
+  file; if already exists, _append_ to file instead.
+    - `echo hello >> file.txt`
+    - `grep 'hello' source.txt >> dest.txt`
+
+---
+
+## Move and delete files
 
 - `rm`: Remove from existence
     - Flags:
