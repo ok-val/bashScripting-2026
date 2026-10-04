@@ -1,3 +1,5 @@
+#!/usr/bin/env bash
+
 echo This is my first bash script written in Vim!
 
 name=Val
