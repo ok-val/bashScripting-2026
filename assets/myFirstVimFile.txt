@@ -1,0 +1,28 @@
+Hello 
+Val 
+world
+now
+this was strange!
+
+Wow, this my first file edited in vim :D
+dfkgjkj
+
+copy
+copy
+paste
+
+copy
+copy
+
+paste
+paste
+
+1
+2
+1
+2
+1
+2
+1
+2
+
