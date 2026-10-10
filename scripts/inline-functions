@@ -1,0 +1,19 @@
+#!/usr/bin/env bash
+
+# Rather than chaining scripts like in './chain-scripts', we can choose
+# to write a function in the same file in which that function runs:
+
+# This syntax looks similar to JS minus the 'function' keyword
+greet() {
+    # By default, bash function vars are globally scoped, meaning they 
+    # will be available outside of function's namespace, potentially 
+    # overwriting other vars, UNLESS we use the `local` keyword
+    
+    # name=$1
+    local name=$1
+    echo "hello $name"
+}
+
+for name in "$@"; do 
+    greet "$name"
+done
