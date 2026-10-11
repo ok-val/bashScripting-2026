@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+
+# Command substitution $() returns the values returned by the command 
+# that was placed inside it.
+
+echo $(echo hello)
+
+# Order of exec: 
+## 1. $(echo hello) runs, returns 'hello' as std out
+## 2. _outer_ echo runs, prints 'hello' as std in 
