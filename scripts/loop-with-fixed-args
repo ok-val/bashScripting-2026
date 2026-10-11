@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+
+for thing in "$1" "$2" "$3"; do
+    echo thing is $thing
+done
+
+# Where: 
+## $1 is an argument, destructured positionally from the file calling it
