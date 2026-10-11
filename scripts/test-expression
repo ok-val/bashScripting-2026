@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+
+# Read more about EXPRESSION in `help '[['`
+
+# if [[(1+1)]]; then
+#     echo True
+# else
+#     echo False
+# fi
+
+if test 1+1; then
+    echo True
+else 
+    echo False
+fi
