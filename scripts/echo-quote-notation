@@ -1,0 +1,13 @@
+#!/usr/bin/env bash
+
+a=1
+b=2
+
+# Double-quote allows variable expansion 
+echo "a equals     $a" # a equals     1
+
+# Single-quote does not allow variable expansion
+echo 'a equals     $a' # a equals     $a
+
+# No quotation is good for quick echos, but eliminates extra spaces
+echo a equals     $a # a equals 1

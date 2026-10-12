@@ -1,0 +1,36 @@
+#!/usr/bin/env bash
+
+a=2
+b=2
+c=3
+d=4
+
+# Check 'help test' for more flags
+
+if [[ $a == $b ]]; then
+    echo "a($a) and b($b) are the same"
+fi
+
+if [[ $c != $d ]]; then
+    echo "c($c) and d($d) are not the same"
+fi
+
+if [[ -f scripts/$1 ]]; then
+    echo "$1 file exists"
+else
+    echo "$1 file does not exist"
+fi
+
+# Note: conditionals are essential alias of TEST and would also run like
+# a command in the CLI 
+
+# Note: Only the double-square bracket is idiomatic of Bash, meaning 
+# that they inherit unique functions of bash while the others don't
+[[ $a == 1 ]]
+echo $?
+
+[ $a == 1 ]
+echo $?
+
+test $a == 1
+echo $?
