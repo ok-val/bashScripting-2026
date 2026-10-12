@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+
+a=3
+while [[ $a ]]; do
+    echo $a
+    sleep 1
+done

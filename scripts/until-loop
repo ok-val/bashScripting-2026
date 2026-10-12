@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+
+a=3
+
+# until executes commands as long as a TEST does not succeed
+# until is the reverse of while
+until [[ $a == 2 ]]; do
+    echo $a
+    sleep 1
+done
