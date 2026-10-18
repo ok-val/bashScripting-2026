@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+
+for thing in {a..f}; do
+	echo "thing is $thing"
+done
+
+for num in {1..5}; do
+	echo "num is $num"
+done
